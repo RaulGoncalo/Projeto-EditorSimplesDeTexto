@@ -17,7 +17,6 @@ function toggleActiveButtons(button) {
 				optionsButtonsAlign.forEach((buttonsAlign) => {
 					if (buttonsAlign.classList.contains("active")) {
 						buttonsAlign.classList.remove("active");
-						document.execCommand("removeFormat", false, null);
 					}
 				});
 			}
@@ -26,7 +25,6 @@ function toggleActiveButtons(button) {
 				optionsButtonsList.forEach((buttonsAlign) => {
 					if (buttonsAlign.classList.contains("active")) {
 						buttonsAlign.classList.remove("active");
-						document.execCommand("removeFormat", false, null);
 						textArea.style.paddingLeft = "1rem";
 					}
 				});
