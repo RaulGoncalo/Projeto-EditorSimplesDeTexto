@@ -61,6 +61,7 @@ textArea.addEventListener("keyup", (e) => {
 		optionsButtons.forEach((button) => {
 			e.target.innerHTML = "";
 			button.classList.remove("active");
+			document.execCommand("removeFormat", false, null);
 		});
 		textArea.style.padding = "1rem";
 	}
