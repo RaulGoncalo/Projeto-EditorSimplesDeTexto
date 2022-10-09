@@ -25,11 +25,8 @@ function toggleActiveButtons(button) {
 				optionsButtonsList.forEach((buttonsAlign) => {
 					if (buttonsAlign.classList.contains("active")) {
 						buttonsAlign.classList.remove("active");
-						textArea.style.paddingLeft = "1rem";
 					}
 				});
-
-				textArea.style.paddingLeft = "2rem";
 			}
 
 			button.classList.add("active");
@@ -63,6 +60,5 @@ textArea.addEventListener("keyup", (e) => {
 			button.classList.remove("active");
 			document.execCommand("removeFormat", false, null);
 		});
-		textArea.style.padding = "1rem";
 	}
 });
